@@ -24,12 +24,15 @@ const anotherElement = (
      google</a>
 )
 
+const anotherUser ='chai aur react'
+
 const ReactElement = React.createElement(
     'a',
     {href: 'https://google.com', target:'_blank'},
-    'Click me to visit google'
+    'Click me to visit google',
+    anotherUser
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <App/> 
+    ReactElement
 )
